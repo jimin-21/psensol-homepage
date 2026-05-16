@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, "Noto Sans KR", sans-serif;
+  color: #17201a;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #e5e7eb;
+  backdrop-filter: blur(12px);
+}
+
+.nav {
+  max-width: 1180px;
+  height: 88px;
+  margin: 0 auto;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-img {
+  width: 130px;
+  height: 64px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-weight: 800;
+}
+
+.nav-links a:hover {
+  color: #006b3f;
+}
+
+.nav-button {
+  padding: 12px 22px;
+  border-radius: 8px;
+  background: #006b3f;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.consult-hero {
+  min-height: 610px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.98) 0%,
+      rgba(255, 255, 255, 0.92) 45%,
+      rgba(232, 242, 237, 0.78) 100%
+    ),
+    url("https://images.unsplash.com/photo-1581093458791-9d42e0f46cf6?auto=format&fit=crop&w=1800&q=80");
+  background-size: cover;
+  background-position: center right;
+}
+
+.consult-inner {
+  max-width: 1180px;
+  min-height: 610px;
+  margin: 0 auto;
+  padding: 70px 28px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.eyebrow {
+  color: #006b3f;
+  font-size: 14px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.consult-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  color: #111827;
+  margin-bottom: 22px;
+  word-break: keep-all;
+}
+
+.consult-text > p {
+  max-width: 620px;
+  color: #374151;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 26px;
+  word-break: keep-all;
+}
+
+.contact-summary {
+  display: grid;
+  gap: 8px;
+  color: #111827;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.calculator-card {
+  padding: 32px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 22px 70px rgba(15, 23, 42, 0.14);
+  backdrop-filter: blur(10px);
+}
+
+.calculator-card h2 {
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 24px;
+}
+
+.calculator-card label {
+  display: block;
+  margin-bottom: 10px;
+  color: #111827;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.input-row {
+  display: flex;
+  height: 56px;
+  margin-bottom: 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 0 18px;
+  border: 0;
+  outline: none;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.input-row span {
+  width: 54px;
+  display: grid;
+  place-items: center;
+  background: #f3f4f6;
+  font-weight: 900;
+}
+
+.result-box {
+  padding: 22px;
+  border-radius: 14px;
+  background: #f0fdf4;
+  border: 1px solid #cfe2d8;
+  margin-bottom: 18px;
+}
+
+.result-box span {
+  display: block;
+  margin-bottom: 8px;
+  color: #006b3f;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.result-box strong {
+  display: block;
+  color: #111827;
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.result-box p {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.primary-button,
+.contact-form button {
+  width: 100%;
+  height: 56px;
+  border: 0;
+  border-radius: 8px;
+  background: #006b3f;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 900;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.primary-button:hover,
+.contact-form button:hover,
+.nav-button:hover {
+  background: #004f2f;
+  color: #ffffff;
+}
+
+.compare-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 84px 28px;
+}
+
+.section-heading {
+  margin-bottom: 38px;
+}
+
+.section-heading.center {
+  text-align: center;
+}
+
+.section-heading h2 {
+  font-size: 34px;
+  letter-spacing: -1px;
+  color: #111827;
+}
+
+.compare-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.compare-card {
+  padding: 34px;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  min-height: 280px;
+}
+
+.compare-card.before {
+  background: #111827;
+  color: #ffffff;
+}
+
+.compare-card.after {
+  background: #f0fdf4;
+  color: #111827;
+}
+
+.compare-card span {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #006b3f;
+  font-weight: 900;
+}
+
+.compare-card.before span {
+  color: #9ca3af;
+}
+
+.compare-card h3 {
+  font-size: 26px;
+  margin-bottom: 18px;
+}
+
+.compare-card p {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(156, 163, 175, 0.35);
+  font-size: 17px;
+}
+
+.form-section {
+  background: #f8fafc;
+  padding: 84px 28px;
+}
+
+.form-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.form-text h2 {
+  font-size: 36px;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+
+.form-text p {
+  color: #4b5563;
+  font-size: 18px;
+  word-break: keep-all;
+}
+
+.contact-form {
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 15px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+
+.contact-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #006b3f;
+}
+
+.check-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.check-row input {
+  width: auto;
+  margin: 0;
+}
+
+.footer {
+  padding: 28px;
+  text-align: center;
+  background: #111827;
+  color: #d1d5db;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .consult-inner,
+  .form-inner,
+  .compare-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav {
+    height: 72px;
+    padding: 0 18px;
+  }
+
+  .logo-img {
+    width: 112px;
+    height: 54px;
+  }
+
+  .nav-links {
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .nav-button {
+    padding: 10px 12px;
+  }
+
+  .consult-inner {
+    min-height: auto;
+    padding: 58px 20px;
+  }
+
+  .consult-text h1 {
+    font-size: 34px;
+  }
+
+  .consult-text > p {
+    font-size: 16px;
+  }
+
+  .calculator-card {
+    padding: 24px;
+  }
+
+  .compare-section,
+  .form-section {
+    padding: 66px 20px;
+  }
+
+  .section-heading h2,
+  .form-text h2 {
+    font-size: 29px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
