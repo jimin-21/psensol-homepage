@@ -210,6 +210,12 @@ img {
   object-position: center;
 }
 
+.hero-visual img.installation-photo {
+  object-fit: contain;
+  object-position: center;
+  background: #18201d;
+}
+
 .hero-visual::after {
   content: "";
   position: absolute;
@@ -416,6 +422,15 @@ img {
 .image-card img {
   height: 100%;
   object-fit: cover;
+}
+
+.product-installation-card {
+  background: #18201d;
+}
+
+.product-installation-card img {
+  object-fit: contain;
+  object-position: center;
 }
 
 .info-list p {

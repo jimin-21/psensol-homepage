@@ -50,7 +50,8 @@ const pageData = {
       "KEGS는 산업 현장의 전력 사용 환경에 적용되는 전기에너지절감 솔루션으로, 전력 손실 요인 감소와 효율 개선을 목표로 합니다.",
     note:
       "※ 현장 조건, 부하 특성, 설비 환경에 따라 절감 효과와 적용 방식은 달라질 수 있습니다.",
-    imageBase: "assets/product-photo",
+    imageBase: "assets/product-installation",
+    imageFit: "contain",
     imageLabel: "Product",
     imageTitle: "H Type / B Type / C Type",
     summary: [
@@ -128,7 +129,8 @@ const pageData = {
     summary: [
       ["Mobile", "010-8569-4114"],
       ["Office", "02-2659-4112"],
-      ["Email", "feelpark@gmail.com"],
+      ["CEO Email", "ceo@psensol.com"],
+      ["General Email", "info@psensol.com"],
       ["본사", "서울 양천구 등촌로 80"]
     ]
   }
@@ -184,6 +186,7 @@ function updateHero(data) {
   heroNote.textContent = data.note;
   heroImageLabel.textContent = data.imageLabel;
   heroImageTitle.textContent = data.imageTitle;
+  heroImage.classList.toggle("installation-photo", data.imageFit === "contain");
 
   setImageWithFallback(heroImage, data.imageBase);
   renderSummary(data.summary);
