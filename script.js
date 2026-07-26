@@ -51,7 +51,7 @@ const pageData = {
       "VORTEX STABILIZER는 산업 설비의 전력 흐름을 안정화하고 저항 및 에너지 손실 감소를 목표로 하는 전력 효율 개선 솔루션입니다.",
     note:
       "※ 현장 조건, 부하 특성, 설비 환경에 따라 절감 효과와 적용 방식은 달라질 수 있습니다.",
-    imageBase: "assets/vortex-stabilizer",
+    imageBase: "assets/vortex-stabilizer-transparent",
     imageFit: "contain",
     imageLabel: "Product",
     imageTitle: "VORTEX STABILIZER",
