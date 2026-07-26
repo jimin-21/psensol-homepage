@@ -28,16 +28,16 @@ let techSlideIndex = 0;
 const pageData = {
   about: {
     eyebrow: "PS ENERGY SOLUTION",
-    title: "산업 현장의 전력 효율을 높이는<br />전기에너지절감 전문 기업",
+    title: "보이지 않는 전력 손실까지<br />기술로 바로잡습니다",
     desc:
-      "피에스에너지솔루션(주)는 KEGS를 기반으로 공장과 산업 시설의 전력 사용 환경을 분석하고, 현장 조건에 맞는 전기에너지절감 솔루션을 제공합니다.",
+      "피에스에너지솔루션(주)는 산업 현장의 전력 흐름을 진단하고, VORTEX STABILIZER를 통해 설비 조건에 맞는 효율 개선 방향을 제안합니다.",
     note:
       "※ 예상 절감률은 10-30%이며, 현장 조건과 설비 환경에 따라 절감 효과는 상이할 수 있습니다.",
     imageBase: "assets/case-1",
-    imageLabel: "KEGS",
-    imageTitle: "K-Electric Generating System",
+    imageLabel: "INDUSTRIAL ENERGY SOLUTION",
+    imageTitle: "현장 진단부터 적용 후 확인까지",
     summary: [
-      ["주요 제품", "KEGS"],
+      ["핵심 제품", "VORTEX STABILIZER"],
       ["예상 절감률", "10-30%"],
       ["사업 분야", "전기에너지절감 솔루션"],
       ["적용 대상", "공장 · 제조시설 · 산업 현장"]
@@ -48,7 +48,7 @@ const pageData = {
     eyebrow: "PRODUCT",
     title: "VORTEX<br />STABILIZER",
     desc:
-      "KEGS는 산업 현장의 전력 사용 환경에 적용되는 전기에너지절감 솔루션으로, 전력 손실 요인 감소와 효율 개선을 목표로 합니다.",
+      "VORTEX STABILIZER는 산업 설비의 전력 흐름을 안정화하고 저항 및 에너지 손실 감소를 목표로 하는 전력 효율 개선 솔루션입니다.",
     note:
       "※ 현장 조건, 부하 특성, 설비 환경에 따라 절감 효과와 적용 방식은 달라질 수 있습니다.",
     imageBase: "assets/vortex-stabilizer",
@@ -57,7 +57,7 @@ const pageData = {
     imageTitle: "VORTEX STABILIZER",
     summary: [
       ["제품명", "VORTEX STABILIZER"],
-      ["제품군", "H / B / C Type"],
+      ["솔루션", "Field Optimization"],
       ["적용 대상", "공장 · 제조시설"],
       ["운용 목표", "전력 효율 개선"]
     ]
