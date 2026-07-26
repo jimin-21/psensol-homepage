@@ -18,6 +18,7 @@ const techSlideImage = document.querySelector("#techSlideImage");
 const techSlideText = document.querySelector("#techSlideText");
 
 const techSlides = [
+  "assets/vortex-principle.png",
   "assets/technology-photo-1.jpg",
   "assets/technology-photo-2.jpg"
 ];
@@ -45,17 +46,17 @@ const pageData = {
 
   product: {
     eyebrow: "PRODUCT",
-    title: "KEGS<br />K-Electric Generating System",
+    title: "VORTEX<br />STABILIZER",
     desc:
       "KEGS는 산업 현장의 전력 사용 환경에 적용되는 전기에너지절감 솔루션으로, 전력 손실 요인 감소와 효율 개선을 목표로 합니다.",
     note:
       "※ 현장 조건, 부하 특성, 설비 환경에 따라 절감 효과와 적용 방식은 달라질 수 있습니다.",
-    imageBase: "assets/product-installation",
+    imageBase: "assets/vortex-stabilizer",
     imageFit: "contain",
     imageLabel: "Product",
-    imageTitle: "H Type / B Type / C Type",
+    imageTitle: "VORTEX STABILIZER",
     summary: [
-      ["제품명", "KEGS"],
+      ["제품명", "VORTEX STABILIZER"],
       ["제품군", "H / B / C Type"],
       ["적용 대상", "공장 · 제조시설"],
       ["운용 목표", "전력 효율 개선"]
@@ -64,19 +65,20 @@ const pageData = {
 
   technology: {
     eyebrow: "TECHNOLOGY",
-    title: "다강체 기반<br />전기절감 메커니즘",
+    title: "VORTEX<br />전자기장 반응 원리",
     desc:
-      "KEGS는 전기적 분극과 자기적 분극 반응을 활용하여 전력 시스템에서 발생하는 손실 저감을 목표로 하는 기술 기반 솔루션입니다.",
+      "VORTEX는 전자의 양자적 파동 성질과 전자기장 파동의 공명을 활용해 전자 흐름을 정렬하고, 저항과 에너지 손실을 줄여 전력 효율 향상을 목표로 합니다.",
     note:
       "※ 기술 적용 효과는 전력 사용 패턴과 현장 설비 조건에 따라 달라질 수 있습니다.",
-    imageBase: "assets/technology-photo-1",
+    imageBase: "assets/vortex-principle",
+    imageFit: "contain",
     imageLabel: "Technology",
-    imageTitle: "Multiferroic Energy Saving",
+    imageTitle: "VORTEX 작동 원리",
     summary: [
-      ["기술 기반", "다강체"],
+      ["기술 기반", "전자기장 파동"],
       ["핵심 방향", "전력 손실 저감"],
-      ["적용 방식", "현장 맞춤 적용"],
-      ["운영 단계", "확인 · 설치 · 점검"]
+      ["작용 원리", "전자 흐름 정렬"],
+      ["기대 효과", "저항 감소 · 효율 향상"]
     ]
   },
 
