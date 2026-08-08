@@ -1,0 +1,7 @@
+{
+  "name": "psensol-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "check": "node --check script.js && node --check api/contact.js" },
+  "dependencies": { "nodemailer": "^7.0.5" }
+}

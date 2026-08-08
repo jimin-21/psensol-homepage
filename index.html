@@ -1,594 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>피에스에너지솔루션(주) | VORTEX 전력 효율 솔루션</title>
-  <meta
-    name="description"
-    content="피에스에너지솔루션(주)는 VORTEX STABILIZER를 기반으로 산업 현장의 전력 효율 개선 솔루션을 제공합니다."
-  />
-
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="피에스에너지솔루션(주)는 VORTEX 기반 산업 현장 전기에너지절감 솔루션을 제공합니다.">
+  <title>피에스에너지솔루션(주) | VORTEX 전기에너지절감 솔루션</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header class="header">
-    <nav class="nav">
-      <a href="index.html" class="logo-area" aria-label="피에스에너지솔루션 메인">
-        <img
-          src="assets/logo-transparent.png"
-          onerror="this.onerror=null; this.src='assets/logo.png';"
-          alt="PS ENERGY SOLUTION 로고"
-          class="logo-img"
-        />
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#main" aria-label="피에스에너지솔루션 홈">
+        <img src="assets/logo-transparent.png" alt="PS Energy Solution" onerror="this.onerror=null;this.src='assets/logo.png'">
       </a>
-
-      <ul class="nav-menu">
-        <li><button class="menu-btn active" data-target="about">회사소개</button></li>
-        <li><button class="menu-btn" data-target="product">제품소개</button></li>
-        <li><button class="menu-btn" data-target="technology">기술소개</button></li>
-        <li><button class="menu-btn" data-target="cert">특허·인증</button></li>
-        <li><button class="menu-btn" data-target="case">설치사례</button></li>
-        <li><button class="menu-btn" data-target="contact">문의</button></li>
-      </ul>
-
-      <a href="consultation.html" class="nav-button">상담 신청</a>
-    </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span><span class="sr-only">메뉴 열기</span></button>
+      <nav id="primary-nav" aria-label="주요 메뉴">
+        <a href="#about">회사소개</a><a href="#products">제품소개</a><a href="#technology">기술소개</a><a href="#certifications">특허·인증</a><a href="#cases">설치사례</a><a class="nav-contact" href="#contact">상담신청</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero" id="heroSection">
-      <div class="hero-inner">
-        <div class="hero-content" id="heroContent">
-          <p class="eyebrow" id="heroEyebrow">PS ENERGY SOLUTION</p>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">INDUSTRIAL ENERGY SOLUTION</p>
+        <h1 id="hero-title">산업 현장의 전력 효율을 높이는<br><strong>전기에너지절감 전문 기업</strong></h1>
+        <p>피에스에너지솔루션(주)는 VORTEX를 기반으로 공장과 산업 시설의 전력 사용 환경을 분석하고, 현장 조건에 맞는 전기에너지절감 솔루션을 제공합니다.</p>
+        <div class="hero-actions"><a class="button primary" href="#about">회사소개</a><a class="button secondary" href="#contact">상담신청 <span aria-hidden="true">→</span></a></div>
+      </div>
+      <div class="hero-image"><img src="assets/case-1.jpg" alt="VORTEX가 설치된 산업 현장 전력 설비" onerror="this.onerror=null;this.src='assets/company-photo.jpg'"><div><span>PS ENERGY SOLUTION</span><strong>현장 분석부터 적용 후 관리까지</strong></div></div>
+    </section>
 
-          <h1 id="heroTitle">
-            보이지 않는 전력 손실까지<br />
-            기술로 바로잡습니다
-          </h1>
+    <section class="key-facts" aria-label="주요 정보">
+      <div><span>CORE PRODUCT</span><strong>VORTEX</strong></div><div><span>EXPECTED SAVING</span><strong>10–15%</strong></div><div><span>SOLUTION</span><strong>전력 효율 개선</strong></div><div><span>APPLICATION</span><strong>공장 · 산업 시설</strong></div>
+    </section>
 
-          <p class="hero-desc" id="heroDesc">
-            피에스에너지솔루션(주)는 산업 현장의 전력 흐름을 진단하고,
-            VORTEX STABILIZER를 통해 설비 조건에 맞는 효율 개선 방향을 제안합니다.
-          </p>
-
-          <p class="hero-note" id="heroNote">
-            ※ 예상 절감률은 10-30%이며, 현장 조건과 설비 환경에 따라 절감 효과는 상이할 수 있습니다.
-          </p>
-
-          <div class="hero-actions">
-            <a href="consultation.html" class="primary-btn">상담 신청</a>
-            <button class="secondary-btn menu-btn-link" data-target="product">제품소개 보기</button>
+    <section class="section about" id="about">
+      <div class="section-inner">
+        <header class="section-heading"><p>ABOUT US</p><h2>산업 현장을 이해하는<br>에너지 절감 파트너</h2><span>현장 조건과 설비 환경을 먼저 살피고, 실제 운영에 맞는 적용 방향을 제안합니다.</span></header>
+        <div class="about-grid">
+          <div class="company-image"><img src="assets/company-photo.jpg" alt="피에스에너지솔루션 회사 전경" onerror="this.onerror=null;this.src='assets/case-1.jpg'"></div>
+          <div class="company-info">
+            <h3>기업 개요</h3>
+            <dl><div><dt>상호명</dt><dd>피에스에너지솔루션(주)</dd></div><div><dt>대표자</dt><dd>박필수</dd></div><div><dt>사업자등록번호</dt><dd>803-86-03676</dd></div><div><dt>법인등록번호</dt><dd>110111-0934065</dd></div><div><dt>사업 분야</dt><dd>전기에너지절감 솔루션 제공</dd></div><div><dt>주요 제품</dt><dd>VORTEX</dd></div></dl>
           </div>
         </div>
-
-        <div class="hero-visual" id="heroVisual">
-          <img
-            src="assets/case-1.jpg"
-            onerror="this.onerror=null; this.src='assets/case-1.png';"
-            alt="산업 현장 전력 설비"
-            id="heroImage"
-          />
-
-          <div class="visual-card">
-            <span id="heroImageLabel">INDUSTRIAL ENERGY SOLUTION</span>
-            <strong id="heroImageTitle">현장 진단부터 적용 후 확인까지</strong>
-          </div>
-        </div>
+        <div class="process-grid"><article><b>01</b><h3>현장 분석</h3><p>전력 사용량과 설비 구성, 부하 특성을 확인해 적용 가능성을 검토합니다.</p></article><article><b>02</b><h3>맞춤 제안</h3><p>공장과 산업 시설의 운영 조건에 맞는 VORTEX 적용 방향을 제안합니다.</p></article><article><b>03</b><h3>운영 지원</h3><p>설치 후 전력 사용 변화와 운영 상태를 지속적으로 확인할 수 있도록 지원합니다.</p></article></div>
       </div>
     </section>
 
-    <section class="summary-section" id="quickSummary">
-      <div class="summary-card">
-        <span>CORE PRODUCT</span>
-        <strong>VORTEX STABILIZER</strong>
-      </div>
-
-      <div class="summary-card">
-        <span>예상 절감률</span>
-        <strong>10-30%</strong>
-      </div>
-
-      <div class="summary-card">
-        <span>사업 분야</span>
-        <strong>전기에너지절감 솔루션</strong>
-      </div>
-
-      <div class="summary-card">
-        <span>적용 대상</span>
-        <strong>공장 · 제조시설 · 산업 현장</strong>
+    <section class="section products" id="products">
+      <div class="section-inner">
+        <header class="section-heading"><p>PRODUCT</p><h2>VORTEX Energy Saving Solution</h2><span>산업 설비의 전력 흐름을 안정화하고 에너지 손실을 줄여 전력 효율 개선을 지원합니다.</span></header>
+        <div class="product-intro"><img src="assets/product-photo.jpg" alt="VORTEX 전기에너지절감 제품" onerror="this.onerror=null;this.src='assets/vortex-stabilizer.png'"><div><p class="label">VORTEX</p><h3>현장 여건에 맞춘 제품 구성</h3><p>설비 규모와 전력 사용 특성에 따라 적합한 타입을 검토합니다. 예상 절감률은 10-15%이며, 현장 조건과 설비 환경에 따라 절감 효과는 상이할 수 있습니다.</p></div></div>
+        <div class="product-grid"><article><div><img src="assets/product-h-type.jpg" alt="VORTEX H Type 제품" onerror="this.onerror=null;this.src='assets/product-photo.jpg'"></div><span>H TYPE</span><h3>대용량 산업 설비</h3><p>전력 사용량이 높은 생산 현장과 대형 설비 환경을 위한 구성입니다.</p></article><article><div><img src="assets/product-b-type.jpg" alt="VORTEX B Type 제품" onerror="this.onerror=null;this.src='assets/product-photo.jpg'"></div><span>B TYPE</span><h3>중형 생산 시설</h3><p>다양한 부하가 함께 운용되는 일반 제조·생산 시설을 위한 구성입니다.</p></article><article><div><img src="assets/product-c-type.jpg" alt="VORTEX C Type 제품" onerror="this.onerror=null;this.src='assets/product-photo.jpg'"></div><span>C TYPE</span><h3>소규모·개별 설비</h3><p>특정 설비 또는 비교적 작은 전력 환경에 유연하게 적용하는 구성입니다.</p></article></div>
       </div>
     </section>
 
-    <section class="content-section">
-      <div class="content-shell" id="contentShell">
-        <article class="content-panel active" id="about">
-          <div class="panel-header">
-            <p class="panel-kicker">About Company</p>
-            <h2>회사소개</h2>
-            <p>
-              피에스에너지솔루션(주)는 전력 사용량이 많은 산업 현장과 공장을 대상으로
-              전력 효율 개선과 전기에너지 절감을 위한 솔루션을 제공하는 기업입니다.
-            </p>
-          </div>
+    <section class="section technology" id="technology">
+      <div class="section-inner tech-layout">
+        <div><header class="section-heading"><p>TECHNOLOGY</p><h2>다강체 기반<br>전기에너지절감 메커니즘</h2></header><p class="tech-description">VORTEX는 전자기장 반응을 기반으로 전자의 흐름을 안정적으로 정렬하고, 전력 전달 과정에서 발생하는 저항과 손실을 줄이는 방향으로 작용합니다.</p><ol class="tech-list"><li><b>전력 환경 분석</b><span>부하와 설비 특성을 확인합니다.</span></li><li><b>전자 흐름 안정화</b><span>다강체 기반 반응으로 전력 흐름을 개선합니다.</span></li><li><b>효율 변화 확인</b><span>적용 전후의 사용 데이터를 비교합니다.</span></li></ol></div>
+        <div class="slider" aria-roledescription="carousel" aria-label="VORTEX 기술 이미지"><div class="slides"><figure class="slide active"><img src="assets/technology-photo-1.jpg" alt="VORTEX 기술 적용 이미지 1"><figcaption>VORTEX TECHNOLOGY 01</figcaption></figure><figure class="slide"><img src="assets/technology-photo-2.jpg" alt="VORTEX 기술 적용 이미지 2"><figcaption>VORTEX TECHNOLOGY 02</figcaption></figure></div><div class="slider-controls"><button type="button" data-slide="prev" aria-label="이전 이미지">←</button><span><b id="slide-current">01</b> / 02</span><button type="button" data-slide="next" aria-label="다음 이미지">→</button></div></div>
+      </div>
+    </section>
 
-          <div class="two-column-grid">
-            <div class="info-card large">
-              <h3>기업 개요</h3>
+    <section class="section certifications" id="certifications">
+      <div class="section-inner">
+        <header class="section-heading"><p>PATENT & CERTIFICATION</p><h2>기술의 신뢰를 증명하는<br>특허와 인증</h2><span>등록 특허와 시험성적, 품질·환경 인증을 바탕으로 기술 신뢰성을 확보합니다.</span></header>
+        <div class="cert-layout"><div class="cert-images"><img src="assets/cert-1.jpg" alt="VORTEX 관련 특허 및 인증서" onerror="this.onerror=null;this.src='assets/cert-2.jpg'"><img src="assets/cert-2.jpg" alt="VORTEX 관련 시험성적 및 인증 자료" onerror="this.onerror=null;this.src='assets/cert-1.jpg'"></div><ul><li><span>01</span><b>특허 등록</b><small>다강체 원천 물질 특허</small></li><li><span>02</span><b>시험성적서</b><small>공인 시험기관 성적</small></li><li><span>03</span><b>EMC 시험</b><small>전자파 적합성 시험</small></li><li><span>04</span><b>ISO 인증</b><small>ISO 9001 · ISO 14001</small></li><li><span>05</span><b>상표 등록</b><small>VORTEX 관련 상표</small></li></ul></div>
+      </div>
+    </section>
 
-              <div class="info-list">
-                <p><strong>상호명</strong> 피에스에너지솔루션(주)</p>
-                <p><strong>대표자</strong> 박필수</p>
-                <p><strong>사업자등록번호</strong> 803-86-03676</p>
-                <p><strong>법인등록번호</strong> 110111-0934065</p>
-                <p><strong>사업 분야</strong> 전기에너지절감 솔루션 제공</p>
-                <p><strong>주요 제품</strong> KEGS</p>
-              </div>
-            </div>
+    <section class="section cases" id="cases">
+      <div class="section-inner">
+        <header class="section-heading"><p>REFERENCES</p><h2>산업 현장에서 확인한<br>설치 및 테스트 사례</h2><span>숙박업, 유리 제조, 반도체, 항만 등 다양한 산업군에 적용해 왔습니다.</span></header>
+        <div class="case-gallery"><figure><img src="assets/case-1.jpg" alt="VORTEX 설치 현장 1"><figcaption>INDUSTRIAL SITE 01</figcaption></figure><figure><img src="assets/case-2.jpg" alt="VORTEX 설치 현장 2"><figcaption>INDUSTRIAL SITE 02</figcaption></figure><figure><img src="assets/case-3.jpg" alt="VORTEX 설치 현장 3"><figcaption>INDUSTRIAL SITE 03</figcaption></figure></div>
+        <div class="table-wrap"><table><caption>VORTEX 설치 및 테스트 결과</caption><thead><tr><th>업체</th><th>절전율</th><th>부하</th><th>업종</th><th>국가</th><th>설치일</th></tr></thead><tbody><tr><td>신*스테이</td><td class="saving">-11%</td><td>복합 냉난방</td><td>숙박업</td><td>대한민국</td><td>2023.02</td></tr><tr><td>한국제*트</td><td class="saving">-17%</td><td>전기로</td><td>유리 제조</td><td>대한민국</td><td>2023.07</td></tr><tr><td>E*S</td><td class="saving">-16%</td><td>도금라인</td><td>반도체</td><td>대한민국</td><td>2023.09</td></tr><tr><td>선**컨테이너터미널</td><td class="saving">-15.7%</td><td>동력</td><td>항만</td><td>대한민국</td><td>2023.07</td></tr><tr><td>한*칼라</td><td class="saving">-11%</td><td>인쇄기</td><td>기타 인쇄업</td><td>대한민국</td><td>2024.01</td></tr><tr><td>화*기계</td><td class="saving">-7%</td><td>콤프레샤</td><td>금속 절삭기 제조</td><td>대한민국</td><td>2024.01</td></tr><tr><td>금*화학</td><td class="saving">-9%</td><td>열처리 라인</td><td>자동차 부품 제조</td><td>대한민국</td><td>2024.04</td></tr><tr><td>연*테크</td><td class="saving">-8%</td><td>항온항습</td><td>항공기 부품 제조</td><td>대한민국</td><td>2024.06</td></tr></tbody></table></div>
+        <p class="case-note">※ 위 수치는 개별 설치·테스트 사례이며, 일반적인 예상 절감률은 10-15%입니다. 실제 효과는 현장 조건과 설비 환경에 따라 달라질 수 있습니다.</p>
+      </div>
+    </section>
 
-            <div class="info-card large accent-card">
-              <h3>현장 중심의 에너지 절감 솔루션</h3>
-              <p>
-                산업 현장의 전력 사용 환경은 업종, 설비 구성, 가동 시간, 부하 특성에 따라 다릅니다.
-                피에스에너지솔루션(주)는 현장 조건을 먼저 확인하고 고객의 운영 환경에 맞는 절감 방향을 제안합니다.
-              </p>
-            </div>
-          </div>
-
-          <div class="three-column-grid">
-            <div class="info-card">
-              <h3>현장 분석</h3>
-              <p>전력 사용량, 설비 구성, 부하 특성을 확인해 적용 가능성을 검토합니다.</p>
-            </div>
-
-            <div class="info-card">
-              <h3>맞춤 제안</h3>
-              <p>공장과 산업 시설의 조건에 맞는 KEGS 적용 방향을 제안합니다.</p>
-            </div>
-
-            <div class="info-card">
-              <h3>운영 관리</h3>
-              <p>설치 후 전력 사용 변화와 운영 상태를 확인할 수 있도록 지원합니다.</p>
-            </div>
-          </div>
-
-          <div class="address-box">
-            <div class="address-item">
-              <h3>본사</h3>
-              <p>서울시 양천구 등촌로 80 삼성빌딩 401호</p>
-            </div>
-
-            <div class="address-item">
-              <h3>마포지사</h3>
-              <p>서울시 마포구 만리재로 14, 르네상스타워 704호</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="content-panel" id="product">
-          <div class="panel-header">
-            <p class="panel-kicker">Product</p>
-            <h2>VORTEX STABILIZER</h2>
-            <p>
-              산업 설비의 전력 흐름을 안정화하고 저항 및 에너지 손실 감소를 목표로 하는
-              전력 효율 개선 솔루션입니다.
-            </p>
-          </div>
-
-          <div class="two-column-grid">
-            <div class="image-card product-installation-card">
-              <img
-                src="assets/vortex-stabilizer-transparent.png"
-                alt="VORTEX STABILIZER 제품"
-              />
-            </div>
-
-            <div class="info-card large accent-card">
-              <span class="card-label">FIELD OPTIMIZATION SYSTEM</span>
-              <h3>전력의 흐름을 더 안정적으로</h3>
-              <p>
-                VORTEX는 현장 전력 환경과 설비 조건을 먼저 확인한 뒤 적용 위치와 방식을 검토합니다.
-                설치 자체보다 진단과 적용 후 변화 확인까지의 전 과정을 중요하게 생각합니다.
-              </p>
-
-              <div class="bullet-list">
-                <p>현장 전력 사용 패턴 및 부하 특성 확인</p>
-                <p>설비 환경에 맞춘 적용 위치 검토</p>
-                <p>적용 전후 운전 데이터 비교 지원</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-grid">
-            <div class="product-card">
-              <div>
-                <span>01 / DIAGNOSIS</span>
-                <h3>현장 진단</h3>
-                <p>전력 사용량, 주요 설비, 부하 특성을 바탕으로 개선 가능성을 검토합니다.</p>
-              </div>
-            </div>
-
-            <div class="product-card">
-              <div>
-                <span>02 / ENGINEERING</span>
-                <h3>맞춤 설계</h3>
-                <p>배전 구성과 설치 환경을 고려해 적합한 적용 위치와 운영 방향을 제안합니다.</p>
-              </div>
-            </div>
-
-            <div class="product-card">
-              <div>
-                <span>03 / VERIFICATION</span>
-                <h3>운영 확인</h3>
-                <p>적용 이후의 전력 사용 변화와 설비 운전 상태를 지속적으로 확인합니다.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="three-column-grid">
-            <div class="info-card">
-              <h3>적용 대상</h3>
-              <p>공장, 제조시설 및 전력 사용량이 많은 산업 현장을 중심으로 검토합니다.</p>
-            </div>
-
-            <div class="info-card">
-              <h3>운영 목표</h3>
-              <p>저항과 에너지 손실 감소를 통한 전력 시스템 효율 향상을 목표로 합니다.</p>
-            </div>
-
-            <div class="info-card">
-              <h3>적용 기준</h3>
-              <p>현장 조건과 설비 환경에 따라 적용 방식과 기대 효과를 개별 안내합니다.</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="content-panel" id="technology">
-          <div class="panel-header">
-            <p class="panel-kicker">Technology</p>
-            <h2>기술소개</h2>
-            <p>
-              VORTEX는 전자기장 파동과 전자 파동의 공명을 통해 전자 흐름을 정렬하고
-              저항과 에너지 손실을 줄여 전력 시스템의 효율 향상을 목표로 합니다.
-            </p>
-          </div>
-
-          <div class="two-column-grid">
-            <div class="image-card tech-slide-card">
-              <img
-                src="assets/vortex-principle.png"
-                alt="VORTEX STABILIZER 전자기장 반응 원리와 작용을 설명하는 원리도"
-                id="techSlideImage"
-              />
-
-              <div class="slide-indicator">
-                <span id="techSlideText">1 / 3</span>
-              </div>
-            </div>
-
-            <div class="info-card large">
-              <h3>VORTEX 전자기장 반응 원리</h3>
-
-              <div class="bullet-list">
-                <p>• 전기장(E)과 자기장(B)이 전자기장 파동으로 전달</p>
-                <p>• 전자 파동과 전자기장 파동의 공명으로 위상 동기화</p>
-                <p>• 전자 흐름을 일정한 방향으로 정렬해 산란 감소</p>
-                <p>• 저항과 에너지 손실 감소 및 전력 효율 향상 기대</p>
-              </div>
-
-              <p class="notice-text">
-                ※ 기술 적용 효과는 전력 사용 패턴과 현장 설비 조건에 따라 달라질 수 있습니다.
-              </p>
-            </div>
-          </div>
-
-          <div class="step-grid">
-            <div class="step-card">
-              <span>01</span>
-              <h3>전력 사용 환경 확인</h3>
-              <p>전력 사용량, 설비 구성, 부하 특성을 확인합니다.</p>
-            </div>
-
-            <div class="step-card">
-              <span>02</span>
-              <h3>적용 위치 검토</h3>
-              <p>메인 ACB, 분전반 등 적합한 적용 위치를 검토합니다.</p>
-            </div>
-
-            <div class="step-card">
-              <span>03</span>
-              <h3>설비 설치 및 적용</h3>
-              <p>현장 조건에 맞춰 안전하게 설치합니다.</p>
-            </div>
-
-            <div class="step-card">
-              <span>04</span>
-              <h3>운영 변화 확인</h3>
-              <p>설치 후 전력 사용 변화와 운영 상태를 확인합니다.</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="content-panel" id="cert">
-          <div class="panel-header">
-            <p class="panel-kicker">Patent & Certification</p>
-            <h2>특허·인증</h2>
-            <p>
-              KEGS는 다강체 원천 물질 특허와 시험성적서, 품질·환경 관련 인증을 기반으로
-              기술 신뢰성을 확보하고 있습니다.
-            </p>
-          </div>
-
-          <div class="three-column-grid">
-            <div class="info-card">
-              <h3>특허 등록</h3>
-              <p>전자기성체 물질 및 그의 제조방법</p>
-              <small>특허 제10-1853793호</small>
-            </div>
-
-            <div class="info-card">
-              <h3>시험성적서</h3>
-              <p>한국화학융합시험연구원 KTR 시험성적서 보유</p>
-              <small>시험성적서 보유</small>
-            </div>
-
-            <div class="info-card">
-              <h3>EMC 시험</h3>
-              <p>전파흡수율 관련 시험성적서 보유</p>
-              <small>시험성적서 보유</small>
-            </div>
-
-            <div class="info-card">
-              <h3>ISO 9001</h3>
-              <p>품질경영시스템 인증</p>
-            </div>
-
-            <div class="info-card">
-              <h3>ISO 14001</h3>
-              <p>환경경영시스템 인증</p>
-            </div>
-
-            <div class="info-card">
-              <h3>상표등록</h3>
-              <p>KEGS 관련 상표 등록</p>
-              <small>제40-2126741호 외</small>
-            </div>
-          </div>
-
-          <div class="image-gallery two">
-            <div class="image-card">
-              <img
-                src="assets/cert-1.jpg"
-                onerror="this.onerror=null; this.src='assets/cert-1.png';"
-                alt="인증 관련 이미지 1"
-              />
-            </div>
-
-            <div class="image-card">
-              <img
-                src="assets/cert-2.jpg"
-                onerror="this.onerror=null; this.src='assets/cert-2.png';"
-                alt="인증 관련 이미지 2"
-              />
-            </div>
-          </div>
-        </article>
-
-        <article class="content-panel" id="case">
-          <div class="panel-header">
-            <p class="panel-kicker">Reference</p>
-            <h2>설치사례</h2>
-            <p>
-              KEGS는 숙박업, 유리 제조, 반도체, 항만, 인쇄, 금속 가공, 자동차 부품,
-              항공기 부품 제조 등 다양한 산업군에서 설치 및 테스트 사례를 보유하고 있습니다.
-            </p>
-          </div>
-
-          <div class="case-highlight">
-            <div>
-              <span>주요 사례 기준</span>
-              <strong>약 7-17%</strong>
-              <p>전력 유형 및 현장 조건에 따른 테스트 사례</p>
-            </div>
-
-            <div>
-              <span>적용 부하</span>
-              <strong>냉난방 · 전기로 · 도금 · 동력</strong>
-              <p>산업 현장별 전력 사용 환경에 맞춰 적용</p>
-            </div>
-
-            <div>
-              <span>적용 업종</span>
-              <strong>숙박 · 제조 · 항만 · 부품</strong>
-              <p>다양한 산업군에 설치 및 테스트 진행</p>
-            </div>
-          </div>
-
-          <div class="case-table-wrap">
-            <table class="case-table">
-              <thead>
-                <tr>
-                  <th>업체</th>
-                  <th>절전율</th>
-                  <th>부하</th>
-                  <th>업종</th>
-                  <th>국가</th>
-                  <th>설치일</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td>신*스테이</td>
-                  <td class="saving">-11%</td>
-                  <td>복합 냉난방</td>
-                  <td>숙박업</td>
-                  <td>대한민국</td>
-                  <td>2023.02</td>
-                </tr>
-
-                <tr>
-                  <td>한국제*트</td>
-                  <td class="saving">-17%</td>
-                  <td>전기로</td>
-                  <td>유리 제조</td>
-                  <td>대한민국</td>
-                  <td>2023.07</td>
-                </tr>
-
-                <tr>
-                  <td>E*S</td>
-                  <td class="saving">-16%</td>
-                  <td>도금라인</td>
-                  <td>반도체</td>
-                  <td>대한민국</td>
-                  <td>2023.09</td>
-                </tr>
-
-                <tr>
-                  <td>선**컨테이너터미널</td>
-                  <td class="saving">-15.7%</td>
-                  <td>동력</td>
-                  <td>항만</td>
-                  <td>대한민국</td>
-                  <td>2023.07</td>
-                </tr>
-
-                <tr>
-                  <td>한*칼라</td>
-                  <td class="saving">-11%</td>
-                  <td>인쇄기</td>
-                  <td>기타 인쇄업</td>
-                  <td>대한민국</td>
-                  <td>2024.01</td>
-                </tr>
-
-                <tr>
-                  <td>화*기계</td>
-                  <td class="saving">-7%</td>
-                  <td>콤프레샤</td>
-                  <td>금속 절삭기 제조</td>
-                  <td>대한민국</td>
-                  <td>2024.01</td>
-                </tr>
-
-                <tr>
-                  <td>금*화학</td>
-                  <td class="saving">-9%</td>
-                  <td>열처리 라인</td>
-                  <td>자동차 부품 제조</td>
-                  <td>대한민국</td>
-                  <td>2024.04</td>
-                </tr>
-
-                <tr>
-                  <td>연*테크</td>
-                  <td class="saving">-8%</td>
-                  <td>항온항습</td>
-                  <td>항공기 부품 제조</td>
-                  <td>대한민국</td>
-                  <td>2024.06</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="image-gallery three">
-            <div class="image-card">
-              <img
-                src="assets/case-1.jpg"
-                onerror="this.onerror=null; this.src='assets/case-1.png';"
-                alt="KEGS 설치 현장 사진 1"
-              />
-            </div>
-
-            <div class="image-card">
-              <img
-                src="assets/case-2.jpg"
-                onerror="this.onerror=null; this.src='assets/case-2.png';"
-                alt="KEGS 설치 현장 사진 2"
-              />
-            </div>
-
-            <div class="image-card">
-              <img
-                src="assets/case-3.jpg"
-                onerror="this.onerror=null; this.src='assets/case-3.png';"
-                alt="KEGS 설치 현장 사진 3"
-              />
-            </div>
-          </div>
-
-          <p class="notice-text">
-            ※ 위 수치는 소개자료에 포함된 테스트 및 설치 사례 기준이며,
-            실제 절감 효과는 현장 조건, 부하 특성, 설비 환경에 따라 달라질 수 있습니다.
-          </p>
-        </article>
-
-        <article class="content-panel" id="contact">
-          <div class="panel-header">
-            <p class="panel-kicker">Contact</p>
-            <h2>문의</h2>
-            <p>
-              전기에너지절감 솔루션 관련 문의는 아래 연락처로 문의해주시기 바랍니다.
-            </p>
-          </div>
-
-          <div class="two-column-grid">
-            <div class="info-card large">
-              <h3>연락처</h3>
-
-              <div class="info-list">
-                <p><strong>Mobile</strong> 010-8569-4114</p>
-                <p><strong>Office</strong> 02-2659-4112</p>
-                <p><strong>Fax</strong> 02-2659-4113</p>
-                <p><strong>CEO Email</strong> ceo@psensol.com</p>
-                <p><strong>General Email</strong> info@psensol.com</p>
-              </div>
-
-              <h3 class="sub-title">주소</h3>
-
-              <div class="info-list">
-                <p><strong>본사</strong> 서울시 양천구 등촌로 80 삼성빌딩 401호</p>
-                <p><strong>마포지사</strong> 서울시 마포구 만리재로 14, 르네상스타워 704호</p>
-              </div>
-
-              <div class="contact-actions">
-                <a href="tel:01085694114">전화하기</a>
-                <a href="mailto:info@psensol.com">이메일</a>
-                <a href="consultation.html">상담 신청</a>
-              </div>
-            </div>
-
-            <div class="image-card">
-              <img
-                src="assets/contact-map.jpg"
-                onerror="this.onerror=null; this.src='assets/contact-map.png';"
-                alt="위치 또는 지도 이미지"
-              />
-            </div>
-          </div>
-        </article>
+    <section class="section contact" id="contact">
+      <div class="section-inner">
+        <header class="section-heading centered"><p>ONLINE INQUIRY</p><h2>상담 신청</h2><span>현장 진단과 제품 적용에 관한 내용을 남겨주시면 담당자가 확인 후 연락드리겠습니다.</span></header>
+        <div class="application-notice"><h3>VORTEX 전기에너지절감 솔루션 상담 창구입니다.</h3><ul><li>접수된 내용은 상담 목적 외의 용도로 사용하지 않습니다.</li><li>현장 조건과 설비 구성에 따라 추가 자료를 요청드릴 수 있습니다.</li><li>필수 항목을 정확히 입력해 주시면 더욱 빠른 상담이 가능합니다.</li></ul></div>
+        <div class="form-title"><div><i></i><h3>신청인 정보</h3><span>상담 접수</span></div><small><b>*</b> 필수 입력 사항</small></div>
+        <form id="contact-form" novalidate>
+          <div class="form-row"><label for="requestType">서비스 요청 유형 <b>*</b></label><div class="radio-group"><label><input id="requestType" type="radio" name="requestType" value="상담 문의" required checked><span>상담 문의</span></label><label><input type="radio" name="requestType" value="현장 진단"><span>현장 진단</span></label><label><input type="radio" name="requestType" value="제품 문의"><span>제품 문의</span></label></div></div>
+          <div class="form-row"><label for="name">이름 <b>*</b></label><div><input id="name" name="name" type="text" autocomplete="name" required maxlength="50"></div></div>
+          <div class="form-row"><label for="email">이메일 <b>*</b></label><div><input id="email" name="email" type="email" autocomplete="email" required maxlength="120"></div></div>
+          <div class="form-row"><label for="phone">연락처 <b>*</b></label><div><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="숫자만 입력" required maxlength="20"></div></div>
+          <div class="form-row"><label for="company">고객업체명 <b>*</b></label><div><input id="company" name="company" type="text" autocomplete="organization" required maxlength="100"></div></div>
+          <div class="form-row"><label for="customerType">고객유형 <b>*</b></label><div><select id="customerType" name="customerType" required><option value="">선택</option><option>제조업</option><option>공장</option><option>설비업체</option><option>기타</option></select></div></div>
+          <div class="form-row"><label for="region">문의지역 <b>*</b></label><div><input id="region" name="region" type="text" placeholder="예: 서울특별시, 경기도 화성시" required maxlength="100"></div></div>
+          <div class="form-row textarea-row"><label for="message">문의내용 <b>*</b></label><div><textarea id="message" name="message" rows="7" placeholder="설비 유형, 전력 사용 현황 등 상담에 필요한 내용을 입력해 주세요." required maxlength="3000"></textarea></div></div>
+          <div class="privacy-row"><label><input id="privacy" name="privacy" type="checkbox" required><span><b>[필수]</b> 개인정보 수집 및 이용에 동의합니다.</span></label><button class="privacy-toggle" type="button" aria-expanded="false" aria-controls="privacy-detail">내용 보기</button><div id="privacy-detail" hidden>수집 항목: 이름, 이메일, 연락처, 업체명, 문의 내용 · 이용 목적: 상담 접수 및 답변 · 보유 기간: 상담 처리 완료 후 1년</div></div>
+          <div class="submit-area"><button class="submit-button" type="submit">상담 신청하기</button><p id="form-status" role="status" aria-live="polite"></p></div>
+        </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer-inner">
-      <div>
-        <strong>피에스에너지솔루션(주)</strong>
-        <p>대표자 박필수 | 사업자등록번호 803-86-03676</p>
-      </div>
-
-      <div>
-        <p>Mobile 010-8569-4114</p>
-        <p>Office 02-2659-4112 | ceo@psensol.com | info@psensol.com</p>
-      </div>
-    </div>
-  </footer>
-
+  <footer><div class="footer-inner"><div class="footer-brand"><strong>피에스에너지솔루션(주)</strong><p>산업 현장의 지속 가능한 에너지 효율을 만듭니다.</p></div><div class="footer-info"><p><b>대표</b> 박필수 <i></i> <b>사업자등록번호</b> 803-86-03676</p><p><b>본사</b> 서울시 양천구 등촌로 80 삼성빌딩 401호</p><p><b>연락처</b> 02-2659-4112 <i></i> <b>이메일</b> info@psensol.com</p></div><a href="#main" class="to-top" aria-label="맨 위로 이동">↑</a></div><div class="copyright">© 2026 PS ENERGY SOLUTION. All rights reserved.</div></footer>
   <script src="script.js"></script>
 </body>
 </html>
