@@ -69,9 +69,10 @@
       const payload = Object.fromEntries(new FormData(form).entries());
       payload.privacy = document.querySelector("#privacy")?.checked === true;
       const response = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
-      if (!response.ok) throw new Error("Request failed");
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || result.ok !== true) throw new Error("Request failed");
       form.reset();
-      if (status) { status.textContent = "상담 신청이 접수되었습니다. 확인 후 연락드리겠습니다."; status.classList.add("success"); }
+      if (status) { status.textContent = result.message || "상담 신청이 접수되었습니다. 확인 후 연락드리겠습니다."; status.classList.add("success"); }
     } catch {
       if (status) { status.textContent = "접수 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요."; status.classList.add("error"); }
     } finally {
