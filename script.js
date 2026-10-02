@@ -3,10 +3,6 @@
   const menu = document.querySelector("#primary-nav");
   const toggle = document.querySelector(".menu-toggle");
   const navLinks = [...document.querySelectorAll('#primary-nav a[href^="#"]')];
-  const slides = [...document.querySelectorAll(".slide")];
-  const current = document.querySelector("#slide-current");
-  let slideIndex = 0;
-  let timer;
 
   const closeMenu = () => {
     if (!menu || !toggle) return;
@@ -18,22 +14,6 @@
     toggle.setAttribute("aria-expanded", String(isOpen));
   });
   navLinks.forEach((link) => link.addEventListener("click", closeMenu));
-
-  const showSlide = (index) => {
-    if (!slides.length) return;
-    slideIndex = (index + slides.length) % slides.length;
-    slides.forEach((slide, i) => slide.classList.toggle("active", i === slideIndex));
-    if (current) current.textContent = String(slideIndex + 1).padStart(2, "0");
-  };
-  const restartSlider = () => {
-    window.clearInterval(timer);
-    timer = window.setInterval(() => showSlide(slideIndex + 1), 3500);
-  };
-  document.querySelectorAll("[data-slide]").forEach((button) => button.addEventListener("click", () => {
-    showSlide(slideIndex + (button.dataset.slide === "next" ? 1 : -1));
-    restartSlider();
-  }));
-  if (slides.length > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) restartSlider();
 
   if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
