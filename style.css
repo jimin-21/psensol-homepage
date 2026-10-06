@@ -22,7 +22,7 @@ button,input,select,textarea { font:inherit; }
 .nav-contact { height:42px!important; padding:0 25px; color:#fff; background:var(--blue); }
 .menu-toggle { display:none; border:0; background:none; }
 
-.hero { display:grid; grid-template-columns:minmax(420px,.9fr) 1.1fr; max-width:1440px; min-height:680px; margin:auto; padding-left:max(32px,calc((100% - 1280px)/2)); }
+.hero { display:grid; grid-template-columns:minmax(420px,.9fr) 1.1fr; max-width:1440px; min-height:680px; margin:auto; padding-left:clamp(32px,calc((100vw - 1280px)/2),80px); }
 .hero-copy { display:flex; flex-direction:column; justify-content:center; padding:80px 55px 80px 0; }
 .eyebrow,.section-heading>p { margin:0 0 18px; color:var(--blue); font-size:12px; font-weight:700; letter-spacing:.18em; }
 .hero h1 { margin:0; color:var(--navy); font-size:clamp(42px,4vw,62px); font-weight:500; line-height:1.25; letter-spacing:-.055em; }
