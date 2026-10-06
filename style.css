@@ -111,6 +111,7 @@ button,input,select,textarea { font:inherit; }
 .installation-card.featured { grid-column:span 2; grid-row:span 2; }
 .installation-card img { width:100%; height:100%; object-fit:cover; transition:transform .4s ease; }
 .installation-card.featured img { object-position:72% center; }
+.installation-card.installation-portrait img { object-fit:contain; object-position:center; }
 .installation-card.contain img { object-fit:contain; padding:10px; }
 .installation-card:hover img { transform:scale(1.025); }
 .installation-card figcaption { position:absolute; right:0; bottom:0; left:0; padding:16px 18px; color:#fff; background:linear-gradient(0deg,rgba(8,27,41,.9),rgba(8,27,41,.05)); font-size:14px; font-weight:500; }
@@ -198,6 +199,7 @@ footer { padding:55px 32px 25px; color:#b4bec6; background:#0d1d2a; }
   .product-grid article>div { height:340px; }
   .installation-gallery { grid-template-columns:1fr 1fr; grid-auto-rows:280px; }
   .installation-card.featured { grid-column:span 2; grid-row:span 1; }
+  .installation-card.featured.installation-portrait { grid-row:span 2; }
   .footer-inner { grid-template-columns:1fr; gap:25px; }
   .to-top { position:absolute; right:25px; }
 }
@@ -234,6 +236,7 @@ footer { padding:55px 32px 25px; color:#b4bec6; background:#0d1d2a; }
   .installation-section { margin-top:78px; }
   .installation-gallery { grid-template-columns:1fr; grid-auto-rows:auto; gap:14px; }
   .installation-card,.installation-card.featured { grid-column:auto; grid-row:auto; aspect-ratio:4/3; }
+  .installation-card.installation-portrait { aspect-ratio:2/3; }
   .application-notice { padding:26px 22px; }
   .form-title { align-items:flex-end; }
   .form-title>div { flex-wrap:wrap; }
